@@ -1,5 +1,9 @@
 # EuclidsLittleAlchemy
-See the Releases section to download the executable ----->
+See the Releases section to download the executable ----->  
+
+
+<br />
+
 
 **References**:
 
@@ -15,7 +19,10 @@ Rougeux, Nicholas. Byrne’s Euclid: The First Six Books of the Elements of Eucl
 
 Kasenchak, Bob. “Modeling Euclid’s Elements Book I in RDF Using Graphite.” Synaptica Insights, October 16, 2020. Accessed May 5, 2025. https://synaptica.com/modeling-euclids-elements-book-i-in-rdf-using-graphite/.
 
-Clay Mathematics Institute. The Thirteen Books of Euclid's Elements. Historical Archive. Published May 8, 2008. Accessed May 5, 2025. https://www.claymath.org/library/historical/euclid/.
+Clay Mathematics Institute. The Thirteen Books of Euclid's Elements. Historical Archive. Published May 8, 2008. Accessed May 5, 2025. https://www.claymath.org/library/historical/euclid/.  
+
+
+<br />
 
 
 **Objectives**:
