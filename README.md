@@ -1,6 +1,12 @@
 # EuclidsLittleAlchemy
 See the Releases section to download the executable ----->  
 
+<br />
+
+**Dependency Graph**:
+
+![graph-2](https://github.com/user-attachments/assets/37a9731d-9d93-4a01-aee6-c613b8b513dc)
+
 
 <br />
 
