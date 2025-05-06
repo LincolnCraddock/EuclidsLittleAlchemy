@@ -1,8 +1,11 @@
 package View;
 
 import javax.swing.*;
+import javax.swing.border.BevelBorder;
+
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.geom.RoundRectangle2D;
 import java.io.File;
 import javax.imageio.*;
 import java.awt.image.*;
@@ -49,25 +52,27 @@ public class DraggableElement extends JLayeredPane {
         // Use a JLabel to display the image
         imageLabel = new JLabel();
         if (image != null) {
+        	image = makeRoundedCorner(image, 30); // Apply rounded corners with 30px radius
             ImageIcon icon = new ImageIcon(image);
             imageLabel.setIcon(icon);
-            imageLabel.setBounds(0, 0, icon.getIconWidth(), icon.getIconHeight());
-            setPreferredSize(new Dimension(icon.getIconWidth(), icon.getIconHeight()));
+            imageLabel.setBounds(0, 0, 146, 134);
+            setPreferredSize(new Dimension(146, 134));
+            setMaximumSize(new Dimension(146, 134));
         } else {
             // Fallback if image is missing
             imageLabel.setText(elem.id);
-            imageLabel.setOpaque(true);
-            imageLabel.setBackground(Color.LIGHT_GRAY);
+            imageLabel.setOpaque(false);
+            imageLabel.setBackground(new Color(0xaf9f90));
             imageLabel.setForeground(Color.BLACK);
             imageLabel.setHorizontalAlignment(SwingConstants.CENTER);
-            imageLabel.setBounds(0, 0, 80, 80);
-            setPreferredSize(new Dimension(80, 80));
-            setMaximumSize(new Dimension(80, 80));
+            imageLabel.setBounds(0, 0, 146, 134);
+            setPreferredSize(new Dimension(146, 134));
+            setMaximumSize(new Dimension(146, 134));
         }
 
         add(imageLabel, JLayeredPane.DEFAULT_LAYER);
         setLayout(null);
-        setOpaque(true);
+        setOpaque(false);
         
         this.kbp = kbp;
         this.map = map;
@@ -77,6 +82,47 @@ public class DraggableElement extends JLayeredPane {
         
         this.isInKnownBarPanel = isInKnownBarPanel;
     }
+    
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        Graphics2D g2 = (Graphics2D) g.create();
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+        int arc = 30; // Roundness radius
+
+        // Background fill
+        g2.setColor(new Color(0xaf9f90)); // Use background color set via setBackground
+        g2.fillRoundRect(0, 0, getWidth(), getHeight(), arc, arc);
+
+        g2.dispose();
+    }
+
+    
+    public static BufferedImage makeRoundedCorner(BufferedImage image, int cornerRadius) {
+        int w = image.getWidth();
+        int h = image.getHeight();
+        BufferedImage output = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
+
+        Graphics2D g2 = output.createGraphics();
+        g2.setComposite(AlphaComposite.Src);
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        
+        // Clear the background with full transparency
+        g2.setColor(new Color(0, 0, 0, 0));
+        g2.fillRect(0, 0, w, h);
+
+        // Create the rounded rectangle mask
+        g2.setClip(new RoundRectangle2D.Float(0, 0, w, h, cornerRadius, cornerRadius));
+
+        // Draw the original image with the clipping mask applied
+        g2.drawImage(image, 0, 0, null);
+        g2.dispose();
+
+        return output;
+    }
+
+
 
     public Element getElement() {
         return element;
@@ -177,7 +223,9 @@ public class DraggableElement extends JLayeredPane {
                         if (result != null)
                         {
                         	var de = new DraggableElement(result, null, (MixingAreaPanel)dropTargets.get(0), view, model, false);
+                        	de.setBounds(nearest.getBounds().x, nearest.getBounds().y, 146, 134);
                         	target.add(de);
+                        	
                         	target.remove(nearest);
                         	target.remove(component);
                         }

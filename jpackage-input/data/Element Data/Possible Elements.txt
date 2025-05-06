@@ -1,0 +1,53 @@
+I.Post.1 Line "To draw a straight line from any point to any point."
+I.Post.2 Extension "To produce a finite straight line continuously in a straight line."
+I.Post.3 Circle "To describe a circle with any center and radius."
+I.Post.4 "Right Angle" "That all right angles equal one another."
+I.Post.5 Parallel "That, if a straight line falling on two straight lines makes the interior angles on the same side less than two right angles, the two straight lines, if produced indefinitely, meet on that side on which are the angles less than the two right angles."
+I.1 "Equilateral Triangle" "To construct an equilateral triangle on a given finite straight line." I-1.png
+I.2 "Equal Line" "To place a straight line equal to a given straight line with one end at a given point." I-2.png
+I.3 "Cut Equal Line" "To cut off from the greater of two given unequal straight lines a straight line equal to the less." I-3.png
+I.4 S.A.S. "If two triangles have two sides equal to two sides respectively, and have the angles contained by the equal straight lines equal, then they also have the base equal to the base, the triangle equals the triangle, and the remaining angles equal the remaining angles respectively, namely those opposite the equal sides." I-4.png
+I.5 "Isosceles Triangles" "In isosceles triangles the angles at the base equal one another, and, if the equal straight lines are produced further, then the angles under the base equal one another." I-5.png
+I.6 "Converse of Isosceles Triangles" "If in a triangle two angles equal one another, then the sides opposite the equal angles also equal one another." I-6.png
+I.7 "Equal Triangles With Shared Base" "Given two straight lines constructed from the ends of a straight line and meeting in a point, there cannot be constructed from the ends of the same straight line, and on the same side of it, two other straight lines meeting in another point and equal to the former two respectively, namely each equal to that from the same end." I-7.png
+I.8 S.S.S. "If two triangles have the two sides equal to two sides respectively, and also have the base equal to the base, then they also have the angles equal which are contained by the equal straight lines." I-8.png
+I.9 "Bisect an Angle" "To bisect a given rectilinear angle." I-9.png
+I.10 "Bisect a Line" "To bisect a given finite straight line." I-10.png
+I.11 "Perpendicular On-Line" "To draw a straight line at right angles to a given straight line from a given point on it." I-11.png
+I.12 "Perpendicular Off-Line" "To draw a straight line perpendicular to a given infinite straight line from a given point not on it." I-12.png
+I.13 "Two Right Angles" "If a straight line stands on a straight line, then it makes either two right angles or angles whose sum equals two right angles." I-13.png
+I.14 "Converse of Two Right Angles" "If with any straight line, and at a point on it, two straight lines not lying on the same side make the sum of the adjacent angles equal to two right angles, then the two straight lines are in a straight line with one another." I-14.png
+I.15 "Vertical Angles" "If two straight lines cut one another, then they make the vertical angles equal to one another." I-15.png
+I.16 "Exterior Angle" "In any triangle, if one of the sides is produced, then the exterior angle is greater than either of the interior and opposite angles." I-16.png
+I.17 "Sum of Angles" "In any triangle the sum of any two angles is less than two right angles." I-17.png
+I.18 "Obtuse Angle" "In any triangle the angle opposite the greater side is greater." I-18.png
+I.19 "Converse of Obtuse Angle" "In any triangle the side opposite the greater angle is greater." I-19.png
+I.20 "Triangle Inequality" "In any triangle the sum of any two sides is greater than the remaining one." I-20.png
+I.21 "Inner Triangle" "If from the ends of one of the sides of a triangle two straight lines are constructed meeting within the triangle, then the sum of the straight lines so constructed is less than the sum of the remaining two sides of the triangle, but the constructed straight lines contain a greater angle than the angle contained by the remaining two sides." I-21.png
+I.22 "Triangle from Three Lines" "To construct a triangle out of three straight lines which equal three given straight lines: thus it is necessary that the sum of any two of the straight lines should be greater than the remaining one." I-22.png
+I.23 "Move an Angle" "To construct a rectilinear angle equal to a given rectilinear angle on a given straight line and at a point on it." I-23.png
+I.24 "Greater Base" "If two triangles have two sides equal to two sides respectively, but have one of the angles contained by the equal straight lines greater than the other, then they also have the base greater than the base." I-24.png
+I.25 "Partial Converse of Greater Base" "If two triangles have two sides equal to two sides respectively, but have the base greater than the base, then they also have the one of the angles contained by the equal straight lines greater than the other." I-25.png
+I.26 "ASA and SAA" "If two triangles have two angles equal to two angles respectively, and one side equal to one side, namely, either the side adjoining the equal angles, or that opposite one of the equal angles, then the remaining sides equal the remaining sides and the remaining angle equals the remaining angle." I-26.png
+I.27 "Alternate Angles" "If a straight line falling on two straight lines makes the alternate angles equal to one another, then the straight lines are parallel to one another." I-27.png
+I.28 "Sum of Interior Angles" "If a straight line falling on two straight lines makes the exterior angle equal to the interior and opposite angle on the same side, or the sum of the interior angles on the same side equal to two right angles, then the straight lines are parallel to one another." I-28.png
+I.29 "Crossed Parallel Lines" "A straight line falling on parallel straight lines makes the alternate angles equal to one another, the exterior angle equal to the interior and opposite angle, and the sum of the interior angles on the same side equal to two right angles." I-29.png
+I.30 "Transitive Property of Parallel Lines" "Straight lines parallel to the same straight line are also parallel to one another." I-30.png
+I.31 "Parallel Line" "To draw a straight line through a given point parallel to a given straight line." I-31.png
+I.32 "Sum of Triangle Angles" "In any triangle, if one of the sides is produced, then the exterior angle equals the sum of the two interior and opposite angles, and the sum of the three interior angles of the triangle equals two right angles." I-32.png
+I.33 "Equals Lines Crossing Parallel Lines" "Straight lines which join the ends of equal and parallel straight lines in the same directions are themselves equal and parallel." I-33.png
+I.34 "Parallelograms" "In parallelogrammic areas the opposite sides and angles equal one another, and the diameter bisects the areas." I-34.png
+I.35 "Parallelograms with Shared Bases and Equal Heights" "Parallelograms which are on the same base and in the same parallels equal one another." I-35.png
+I.36 "Parallelograms with Equal Heights" "Parallelograms which are on equal bases and in the same parallels equal one another." I-36.png
+I.37 "Triangles with Shared Bases and Equal Heights" "Triangles which are on the same base and in the same parallels equal one another." I-37.png
+I.38 "Triangles with Equal Heights" "Triangles which are on equal bases and in the same parallels equal one another." I-38.png
+I.39 "Partial Converse of Triangles with Equal Heights" "Equal triangles which are on the same base and on the same side are also in the same parallels." I-39.png
+I.40 "Equal Triangles with Shared Bases" "Equal triangles which are on equal bases and on the same side are also in the same parallels." I-40.png
+I.41 "Triangle and Parallelogram with Shared Bases" "If a parallelogram has the same base with a triangle and is in the same parallels, then the parallelogram is double the triangle." I-41.png
+I.42 "Parallelogram Equal to Triangle" "To construct a parallelogram equal to a given triangle in a given rectilinear angle." I-42.png
+I.43 "Complements of Parallelograms" "In any parallelogram the complements of the parallelograms about the diameter equal one another." I-43.png
+I.44 "Parallelogram from Line and Angle" "To a given straight line in a given rectilinear angle, to apply a parallelogram equal to a given triangle." I-44.png
+I.45 "Area of a Rectilinear Figure" "To construct a parallelogram equal to a given rectilinear figure in a given rectilinear angle." I-45.png
+I.46 Square "To describe a square on a given straight line." I-46.png
+I.47 Pythagorean "In right-angled triangles the square on the side opposite the right angle equals the sum of the squares on the sides containing the right angle." I-47.png
+I.48 "Converse of Pythagorean" "If in a triangle the square on one of the sides equals the sum of the squares on the remaining two sides of the triangle, then the angle contained by the remaining two sides of the triangle is right." I-48.png

@@ -22,7 +22,7 @@ public class Combination {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(element1, element2);
+		return element1.hashCode() + element2.hashCode();
 	}
 
 	@Override
@@ -34,7 +34,8 @@ public class Combination {
 		if (getClass() != obj.getClass())
 			return false;
 		Combination other = (Combination) obj;
-		return (Objects.equals(element1, other.element1) && Objects.equals(element2, other.element2)) || (Objects.equals(element1, other.element2) && Objects.equals(element2, other.element1));
+		return (element1.id.equals(other.element1.id) && element2.id.equals(other.element2.id)) || (element1.id.equals(other.element2.id)&& element2.id.equals(other.element1.id));
+		//return (Objects.equals(element1, other.element1) && Objects.equals(element2, other.element2)) || (Objects.equals(element1, other.element2) && Objects.equals(element2, other.element1));
 	}
 
 	@Override

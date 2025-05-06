@@ -1,13 +1,16 @@
 package Model;
 import java.awt.*;
+import java.io.File;
 import java.util.*;
+
+import javax.print.attribute.standard.Media;
 
 import Main.*;
 import View.*;
 
 public abstract class Model {
 	
-	private Set<Element> knownElements;
+	public final Set<Element> knownElements;
 	private View view;
 	
 	public Model(View view)
@@ -15,6 +18,7 @@ public abstract class Model {
 		knownElements = new TreeSet<Element>(ElementFactory.PRIMARY_ELEMENTS);
 		this.view = view;
 		
+		view.setModel(this);
 		view.repopulateKnownElements(knownElements);
 	}
 	
@@ -36,6 +40,14 @@ public abstract class Model {
 			{
 				view.repopulateKnownElements(knownElements);
 			}
+			
+			if (knownElements.size() >= 10 && !knownElements.contains(ElementFactory.getElement("I.Post.5")))
+			{
+				knownElements.add(ElementFactory.getElement("I.Post.5"));
+				view.repopulateKnownElements(knownElements);
+			}
+			else
+			{System.out.println(knownElements);}
 		}
 		return result; // it's the controller's job to adjust the view depending on the result of the combination
 		

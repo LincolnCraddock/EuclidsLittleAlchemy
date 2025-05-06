@@ -18,30 +18,14 @@ public abstract class View {
 	public Model model;
 	
 	public View()
-	{
-		window = new GameWindow();
-		
-		window.setVisible(true);
-		
-		// TODO: delete this listener later
-		// close this window when it loses focus
-		var test = new WindowFocusListener ()
-		{
-			@Override
-			public void windowGainedFocus(WindowEvent e) {}
-
-			@Override
-			public void windowLostFocus(WindowEvent e)
-			{
-				System.exit(0);
-			}
-		};
-		window.addWindowFocusListener(test);
-	}
+	{ }
 	
 	public void setModel(Model model)
 	{
 		this.model = model;
+		
+		window = new GameWindow(model);
+		window.setVisible(true);
 	}
 	
 	public void repopulateKnownElements()

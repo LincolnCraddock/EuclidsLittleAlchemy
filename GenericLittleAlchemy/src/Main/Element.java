@@ -47,12 +47,12 @@ public abstract class Element implements Comparable<Element> {
 		if (getClass() != obj.getClass())
 			return false;
 		Element other = (Element) obj;
-		return Objects.equals(name, other.name);
+		return id.equals(other.id);
 	}
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(name);
+		return Objects.hash(id);
 	}
 	
 	@Override
